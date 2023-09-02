@@ -1,0 +1,51 @@
+*{
+	margin:0;
+	padding:0;
+}
+.container_about{
+	display: grid;
+	grid-template-columns: 400px 400px auto;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas: 
+		"navigation navigation navigation"
+		"film_name . spot_about"
+		"film_about . spot_about"
+		"film_about . arlo_about"
+		"studio_logo . arlo-about"
+	;
+	padding: 40 px;
+	justify-items:center;
+	align-items:center;
+	background-image: url(images/GD_poster.png);
+	background-size: cover;
+	grid-row-gap:20px;
+}
+header{
+	grid-area:navigation;
+}
+.film_name{
+	grid-area: film_name;
+	color: green;
+	width:300px;
+	padding:15px;
+	text-shadow:3px 3px 3px white;
+}
+.film_about{
+	grid-area: film_about;
+	width:300px;
+	padding:15px;
+	background-color:rgba(100, 100, 200, 0.7)
+}
+.spot_about{
+	grid-area: spot_about;
+	padding:15px;
+	background-color:rgba(200, 200, 250, 0.7)
+}
+.arlo_about{
+	grid-area:arlo_about;
+	padding:15px;
+	background-color:rgba(200, 200, 250, 0.7)
+}
+.studio_logo{
+	grid-area:studio_logo;
+}
